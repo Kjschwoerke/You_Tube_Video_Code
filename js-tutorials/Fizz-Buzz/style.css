@@ -1,0 +1,8 @@
+* {
+    text-align: center;
+}
+
+#display li{
+    list-style: none;
+    margin: .25em;
+}

@@ -1,0 +1,72 @@
+:root {
+    --background: #f8f8f8;
+    --red: #8d0303;
+    --black: #150000;
+    --white: #ffffff;
+}
+
+*{
+    background: var(--background);
+    color: var(--black);
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    width: 300px;
+    height: auto;
+    margin: 1em;
+    padding: 1em;
+    border: solid 3px var(--red);
+    border-radius: 10px;
+    color: var(--red);
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--black);
+    color: var(--white);
+    border: var(--red) solid 3px;
+}
+
+/*Animated Part Below:*/
+
+.non-animated-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--black) solid 3px;
+    border-radius: 10px;
+    background: var(--red);
+    color: var(--white);
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.animated-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--black) solid 3px;
+    border-radius: 10px;
+    background: var(--red);
+    color: var(--white);
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+
+    /*add animation property*/
+    animation: animated 3s ease-in-out 0s 1;
+}
+
+@keyframes animated {
+   to{
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    width: 100%;
+   }
+}
